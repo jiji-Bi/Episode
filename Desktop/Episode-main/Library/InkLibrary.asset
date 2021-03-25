@@ -27,9 +27,9 @@ MonoBehaviour:
     includePaths: []
     includes: []
   - compileAutomatically: 0
-    inkAsset: {fileID: 102900000, guid: a535bd7bf8840374eb18b3a9a0c85ce3, type: 3}
+    inkAsset: {fileID: 102900000, guid: f6a6e997b82d27a4592c4b9d4bd64c95, type: 3}
     jsonAssetDirectory: {fileID: 0}
-    jsonAsset: {fileID: 4900000, guid: 4412fbb6529b2844fa82ea083bc902b3, type: 3}
+    jsonAsset: {fileID: 4900000, guid: ffa606c154506b04b9035333711457be, type: 3}
     unhandledCompileErrors: []
     errors: []
     warnings: []
