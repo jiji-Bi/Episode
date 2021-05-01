@@ -1,8 +1,8 @@
 Win64
 PlayerPath?
-C:/Users/Asus/Music/Final.exe
+C:/Users/Asus/Desktop/VN/Episode-main2/Final.exe
 SceneListBegin?
-Assets/Scenes/LOADING.unity
+Assets/Scenes/Main.unity
 SceneListEnd?
 e41918c9e32b7840fccfa7ee81e3f81e Assembly-CSharp.dll:.LogoCinematic
 50f13ff3865c269125102f38000ef0bc Assembly-CSharp.dll:.PlayerHealth
@@ -130,6 +130,7 @@ d251bf88db6c95a6b1aa0b69298da9ef UnityEngine.SpatialTracking.dll:UnityEngine.Spa
 4d16cfbaa8e821a2b370e80844a0e9bc Assembly-CSharp.dll:TMPro.Examples.Benchmark03
 64539b9106486719878df4581e1ae0ad Assembly-CSharp.dll:.GeneralAdvancedTechniques
 e6f0efd0e20669d577e9d21526b3d3f9 Assembly-CSharp.dll:TMPro.Examples.WarpTextExample
+0ceb492cd7deb01f8ecc9bbee3ff300e Assembly-CSharp.dll:.CharacterManager
 99f0f78788218459985f9b0975e79146 Assembly-CSharp.dll:.GeneralSequencer
 dd7520b7d4e690e8c593273e7b9fbe80 Assembly-CSharp.dll:TMPro.Examples.TMP_TextEventCheck
 b8a5e8091ab0b8861d2add371082c5e0 Unity.TextMeshPro.dll:TMPro.TMP_SpriteAsset
@@ -223,6 +224,7 @@ df434544c9f7b33d1cc7e635b180d279 Unity.TextMeshPro.dll:TMPro.TextMeshPro
 8b1fe5dfdcf943fb3b72506b9f19335f Assembly-CSharp.dll:.EnvMapAnimator
 a0d1bcc68004704308edb26e4d0f97b5 Assembly-CSharp.dll:.PathSplines
 505d135987a40b183e97f89c9c82d9e6 Assembly-CSharp.dll:.GeneralUISpace
+44b4854780c109c1d0ce3b8cdec082dc Assembly-CSharp.dll:.BackgManager
 8649814970b42d345b89944b862453cc Unity.TextMeshPro.dll:TMPro.TMP_SubMesh
 0e1d02c74d354ffc8b804011a794739b Unity.2D.IK.Runtime.dll:UnityEngine.Experimental.U2D.IK.IKManager2D
 89d50a503fd518becbc8b1bf86addcae Assembly-CSharp.dll:.AnswerScript

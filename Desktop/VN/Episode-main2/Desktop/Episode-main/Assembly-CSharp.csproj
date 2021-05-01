@@ -102,6 +102,8 @@
     <Compile Include="Assets\PlayerHealth.cs" />
     <Compile Include="Assets\QuestionAndAnswers.cs" />
     <Compile Include="Assets\QuizManager.cs" />
+    <Compile Include="Assets\Scripts 2\Managers\BackgManager.cs" />
+    <Compile Include="Assets\Scripts 2\Managers\CharacterManager.cs" />
     <Compile Include="Assets\Scripts 2\Managers\InkManager.cs" />
     <Compile Include="Assets\Scripts\SceneSwitcher.cs" />
     <Compile Include="Assets\sfxManager.cs" />

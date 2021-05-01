@@ -42,22 +42,31 @@ public class InkManager : MonoBehaviour
     }
 
     private void Bindfunctions(Story story)
-    {//THESE ARE LAMBDA EXPRESSIONS BASICALLY WE WOULD WRITE THEM THIS WAY 
-     // private Add_character(int playerIndex, int position)
-     //{ 
-     //Debug.Log(string.Format("Character Requested with index of {0} and position {1}"));
-     //}
-     // story.BindExternalFunction("add_character", (int playerIndex, int position) => 
-     // Add_character(int playerIndex, int position)
-     //Same goes for the changing background function 
-
+    {
         story.BindExternalFunction("change_background", (int index) =>
-        { Debug.Log("Background Change Resquested with index of " + index); });
-        story.BindExternalFunction("add_character", (int playerIndex, int position) =>
-        { Debug.Log(string.Format("Character Requested with index of {0} and position {1}", playerIndex, position)); });
+        {
+            ChangeBackground(index);
+        });
+       
     }
-
-
+    //THESE ARE LAMBDA EXPRESSIONS BASICALLY WE WOULD WRITE THEM THIS WAY 
+    // private Add_character(int playerIndex, int position)
+    //{ 
+    //Debug.Log(string.Format("Character Requested with index of {0} and position {1}"));
+    //}
+    // story.BindExternalFunction("add_character", (int playerIndex, int position) => 
+    // Add_character(int playerIndex, int position)
+    //Same goes for the changing background function 
+    private void ChangeBackground(int index)
+    {
+        BackgManager.instance.ChangeBackground(index,1);
+        CharacterManager.instance.ClearActors();
+    }
+   
+    private void Add_character(int playerIndex, int position)
+    {
+        CharacterManager.instance.GenerateCharacter(playerIndex, position);
+    }
     // This is the main function called every time the story changes. It does a few things:
     // Destroys all the old content and choices.
     // Continues over all the lines of text, then displays all the choices. If there are no choices, the story is finished!

@@ -6,15 +6,14 @@ EXTERNAL add_character(x,y)
 //EXTERNAL finished(victory)
 //EXTERNAL show_emotion(emotion)
 One day, the brave adventurer started waking up feeling, a little bit weird.
-hiihih
 ~change_background(0)
-~add_character(0,2)
 ->waking_up
 ==waking_up==
 * [Get up from bed] 
 ->after_getting_up
 + [Stay in bed a little longer]
 You lazily stay in bed and regain more energy...
+~change_background(2)
 //~show_emotion("sad")
 //play_voiceline(0,1, 50)
 ~energylevel++
@@ -24,20 +23,18 @@ You lazily stay in bed and regain more energy...
 ~change_background(1)
 You started moving toward the middle of the town, where you found two of your friends.
 * Talk to Laura
-//~add_character(0,2)
-//~add_character(1,0)
 Laura: "Hi! How are you?"
+~change_background(3)
+
 //~show_emotion("startled")
 //~play_voiceline(1,1.5, 100)
 ->after_getting_up.talking_to_Laura
-
 * Talk to Danny
 //~add_character(0,2)
 //~add_character(2,1)
 Danny: "Did you see that car?"
 //~play_voiceline(2,1, 90)
 ->talking_to_Danny
-
 =talking_to_Laura
 * I'm feeling really good what about you?
 //~show_emotion("happy")
