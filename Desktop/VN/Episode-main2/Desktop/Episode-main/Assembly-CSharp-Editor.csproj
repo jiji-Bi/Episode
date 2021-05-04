@@ -728,6 +728,18 @@
       <Project>{7C3A11DF-CA75-777E-92E4-F4B7246DFE44}</Project>
       <Name>Assembly-CSharp</Name>
     </ProjectReference>
+    <ProjectReference Include="spine-unity-examples.csproj">
+      <Project>{2814D90C-EB2D-86C3-C706-0880D10E3726}</Project>
+      <Name>spine-unity-examples</Name>
+    </ProjectReference>
+    <ProjectReference Include="spine-unity.csproj">
+      <Project>{118FB10C-79AD-ACEF-CFC2-9F9ADD66BC3D}</Project>
+      <Name>spine-unity</Name>
+    </ProjectReference>
+    <ProjectReference Include="spine-unity-examples-editor.csproj">
+      <Project>{73BC56F9-FDA4-D93B-8A15-96386B9A6449}</Project>
+      <Name>spine-unity-examples-editor</Name>
+    </ProjectReference>
     <ProjectReference Include="Ink-Libraries.csproj">
       <Project>{36D248D8-8148-E79F-4659-06B155DFB222}</Project>
       <Name>Ink-Libraries</Name>
@@ -735,6 +747,10 @@
     <ProjectReference Include="InkEditor.csproj">
       <Project>{8BA33324-7C20-5D7A-C674-81B4007B445E}</Project>
       <Name>InkEditor</Name>
+    </ProjectReference>
+    <ProjectReference Include="spine-unity-editor.csproj">
+      <Project>{550761A1-5004-379C-D00F-8DC429DD2108}</Project>
+      <Name>spine-unity-editor</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

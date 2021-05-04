@@ -60,9 +60,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Spine Examples\Scripts\Sample Components\SkeletonUtility Modules\Editor\SkeletonRagdoll2DInspector.cs" />
-    <Compile Include="Assets\Spine Examples\Scripts\Sample Components\SkeletonUtility Modules\Editor\SkeletonRagdollInspector.cs" />
-    <None Include="Assets\Spine Examples\Scripts\Sample Components\SkeletonUtility Modules\Editor\spine-unity-examples-editor.asmdef" />
+    <Compile Include="Assets\Spine-integ-unityrun\Spine Examples\Scripts\Sample Components\SkeletonUtility Modules\Editor\SkeletonRagdoll2DInspector.cs" />
+    <Compile Include="Assets\Spine-integ-unityrun\Spine Examples\Scripts\Sample Components\SkeletonUtility Modules\Editor\SkeletonRagdollInspector.cs" />
+    <None Include="Assets\Spine-integ-unityrun\Spine Examples\Scripts\Sample Components\SkeletonUtility Modules\Editor\spine-unity-examples-editor.asmdef" />
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
     </Reference>
@@ -671,6 +671,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="spine-unity.csproj">
+      <Project>{118FB10C-79AD-ACEF-CFC2-9F9ADD66BC3D}</Project>
+      <Name>spine-unity</Name>
+    </ProjectReference>
     <ProjectReference Include="spine-unity-examples.csproj">
       <Project>{2814D90C-EB2D-86C3-C706-0880D10E3726}</Project>
       <Name>spine-unity-examples</Name>

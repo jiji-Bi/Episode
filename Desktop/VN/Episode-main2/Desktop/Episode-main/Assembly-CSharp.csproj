@@ -105,6 +105,7 @@
     <Compile Include="Assets\Scripts 2\Managers\BackgManager.cs" />
     <Compile Include="Assets\Scripts 2\Managers\CharacterManager.cs" />
     <Compile Include="Assets\Scripts 2\Managers\InkManager.cs" />
+    <Compile Include="Assets\Scripts 2\Managers\Player.cs" />
     <Compile Include="Assets\Scripts\SceneSwitcher.cs" />
     <Compile Include="Assets\sfxManager.cs" />
     <Compile Include="Assets\Sucess.cs" />
@@ -141,6 +142,7 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeB.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
+    <None Include="Assets\Ressources2\Spineboy\main_character\mcandidate.atlas.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
     <None Include="Assets\LeanTween\Examples\Archived\2dUnlitWithFade.shader" />
@@ -148,6 +150,7 @@
     <None Include="Assets\LeanTween\ReadMe.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
     <None Include="Assets\Ressources2\Fonts\OFL.txt" />
+    <None Include="Assets\Spine-integ-unityrun\Spine\version.txt" />
     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Oswald-Bold - OFL.txt" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
@@ -771,6 +774,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="spine-unity-examples.csproj">
+      <Project>{2814D90C-EB2D-86C3-C706-0880D10E3726}</Project>
+      <Name>spine-unity-examples</Name>
+    </ProjectReference>
+    <ProjectReference Include="spine-unity.csproj">
+      <Project>{118FB10C-79AD-ACEF-CFC2-9F9ADD66BC3D}</Project>
+      <Name>spine-unity</Name>
+    </ProjectReference>
+    <ProjectReference Include="spine-unity-examples-editor.csproj">
+      <Project>{73BC56F9-FDA4-D93B-8A15-96386B9A6449}</Project>
+      <Name>spine-unity-examples-editor</Name>
+    </ProjectReference>
     <ProjectReference Include="Ink-Libraries.csproj">
       <Project>{36D248D8-8148-E79F-4659-06B155DFB222}</Project>
       <Name>Ink-Libraries</Name>
@@ -778,6 +793,10 @@
     <ProjectReference Include="InkEditor.csproj">
       <Project>{8BA33324-7C20-5D7A-C674-81B4007B445E}</Project>
       <Name>InkEditor</Name>
+    </ProjectReference>
+    <ProjectReference Include="spine-unity-editor.csproj">
+      <Project>{550761A1-5004-379C-D00F-8DC429DD2108}</Project>
+      <Name>spine-unity-editor</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
