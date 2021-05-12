@@ -163,6 +163,46 @@ PrefabInstance:
       propertyPath: m_hasFontAssetChanged
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2656379200440394951, guid: 316517c4143f6cf49a287e728a2169f5,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: 2656379200440394951, guid: 316517c4143f6cf49a287e728a2169f5,
+        type: 3}
+      propertyPath: checkPaddingRequired
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2656379200440394951, guid: 316517c4143f6cf49a287e728a2169f5,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2656379200440394951, guid: 316517c4143f6cf49a287e728a2169f5,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2656379200440394951, guid: 316517c4143f6cf49a287e728a2169f5,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2656379200440394951, guid: 316517c4143f6cf49a287e728a2169f5,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2656379200440394951, guid: 316517c4143f6cf49a287e728a2169f5,
+        type: 3}
+      propertyPath: m_textInfo.pageCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2656379200440394951, guid: 316517c4143f6cf49a287e728a2169f5,
+        type: 3}
+      propertyPath: m_text
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 5791161013557927980, guid: 316517c4143f6cf49a287e728a2169f5,
         type: 3}
       propertyPath: m_LocalPosition.x

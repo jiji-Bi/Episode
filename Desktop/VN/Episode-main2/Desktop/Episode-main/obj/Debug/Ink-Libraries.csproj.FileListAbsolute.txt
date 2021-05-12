@@ -241,3 +241,4 @@ C:\Users\Asus\Desktop\VN\Episode-main2\Desktop\Episode-main\obj\Debug\Ink-Librar
 C:\Users\Asus\Desktop\VN\Episode-main2\Desktop\Episode-main\obj\Debug\Ink-Libraries.csproj.CopyComplete
 C:\Users\Asus\Desktop\VN\Episode-main2\Desktop\Episode-main\obj\Debug\Ink-Libraries.dll
 C:\Users\Asus\Desktop\VN\Episode-main2\Desktop\Episode-main\obj\Debug\Ink-Libraries.pdb
+C:\Users\Asus\Desktop\VN\Episode-main2\Desktop\Episode-main\Temp\bin\Debug\clipper_library.dll

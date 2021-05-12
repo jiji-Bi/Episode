@@ -264,3 +264,13 @@ C:\Users\Asus\Desktop\VN\Episode-main2\Desktop\Episode-main\obj\Debug\Assembly-C
 C:\Users\Asus\Desktop\VN\Episode-main2\Desktop\Episode-main\obj\Debug\Assembly-CSharp.csproj.CopyComplete
 C:\Users\Asus\Desktop\VN\Episode-main2\Desktop\Episode-main\obj\Debug\Assembly-CSharp.dll
 C:\Users\Asus\Desktop\VN\Episode-main2\Desktop\Episode-main\obj\Debug\Assembly-CSharp.pdb
+C:\Users\Asus\Desktop\VN\Episode-main2\Desktop\Episode-main\Temp\bin\Debug\Cinemachine.dll
+C:\Users\Asus\Desktop\VN\Episode-main2\Desktop\Episode-main\Temp\bin\Debug\clipper_library.dll
+C:\Users\Asus\Desktop\VN\Episode-main2\Desktop\Episode-main\Temp\bin\Debug\com.unity.cinemachine.editor.dll
+C:\Users\Asus\Desktop\VN\Episode-main2\Desktop\Episode-main\Temp\bin\Debug\UnityEditor.Timeline.dll
+C:\Users\Asus\Desktop\VN\Episode-main2\Desktop\Episode-main\Temp\bin\Debug\spine-unity-examples.pdb
+C:\Users\Asus\Desktop\VN\Episode-main2\Desktop\Episode-main\Temp\bin\Debug\spine-unity.pdb
+C:\Users\Asus\Desktop\VN\Episode-main2\Desktop\Episode-main\Temp\bin\Debug\spine-unity-examples-editor.pdb
+C:\Users\Asus\Desktop\VN\Episode-main2\Desktop\Episode-main\Temp\bin\Debug\spine-unity-editor.pdb
+C:\Users\Asus\Desktop\VN\Episode-main2\Desktop\Episode-main\Temp\bin\Debug\Cinemachine.pdb
+C:\Users\Asus\Desktop\VN\Episode-main2\Desktop\Episode-main\Temp\bin\Debug\com.unity.cinemachine.editor.pdb

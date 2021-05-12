@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2637568460418299011}
   - component: {fileID: 3634305233927085919}
   m_Layer: 0
-  m_Name: salle_3_nuit
+  m_Name: salle_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

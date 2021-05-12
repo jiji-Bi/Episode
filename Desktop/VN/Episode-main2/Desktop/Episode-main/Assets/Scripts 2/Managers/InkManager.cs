@@ -14,7 +14,6 @@ public class InkManager : MonoBehaviour
     [SerializeField]
     private TextAsset inkJSONAsset = null;
     public Story story;
-
     [SerializeField]
     private Canvas canvas = null;
     public GameObject boxPrefab;
@@ -23,11 +22,9 @@ public class InkManager : MonoBehaviour
     private TextMeshProUGUI textPrefab = null;
     [SerializeField]
     private Button buttonPrefab = null;
-
-
+    
     void Awake()
     {
-        // Remove the default message
         RemoveChildren();
         StartStory();
     }
@@ -47,9 +44,12 @@ public class InkManager : MonoBehaviour
         {
             ChangeBackground(index);
         });
-       
+        story.BindExternalFunction("add_character", (int playerIndex, int position) =>
+        {
+            Add_character(playerIndex, position);
+        });
     }
-    //THESE ARE LAMBDA EXPRESSIONS BASICALLY WE WOULD WRITE THEM THIS WAY 
+    //THESE ARE LAMBDA EXPRESSIONS BASICALLY WE WOULD WRITE THEM THIS WAY hekaka
     // private Add_character(int playerIndex, int position)
     //{ 
     //Debug.Log(string.Format("Character Requested with index of {0} and position {1}"));
@@ -59,10 +59,10 @@ public class InkManager : MonoBehaviour
     //Same goes for the changing background function 
     private void ChangeBackground(int index)
     {
-        BackgManager.instance.ChangeBackground(index,1);
+        BackgManager.instance.ChangeBackground(index, 1);
         CharacterManager.instance.ClearActors();
     }
-   
+
     private void Add_character(int playerIndex, int position)
     {
         CharacterManager.instance.GenerateCharacter(playerIndex, position);
@@ -77,20 +77,19 @@ public class InkManager : MonoBehaviour
 
         // Read all the content until we can't continue any more
         while (story.canContinue)
-        {
-            // Continue gets the next line of the story
+        { 
             string text = story.ContinueMaximally();
+            // Continue gets the next line of the story
             // This removes any white space from the text.
             text = text.Trim();
             // Display the text on screen!
-
-            CreateContentView(text);
+            CreateContentView(text);    
         }
 
         // Display all the choices, if there are any!7
         if (story.currentChoices.Count > 0)
         {
-            // Display all the choices, if there are any!
+            // ddisplay all the choices, if there are any!
             for (int i = 0; i < story.currentChoices.Count; i++)
             {
                 Choice choice = story.currentChoices[i];
@@ -114,7 +113,6 @@ public class InkManager : MonoBehaviour
             });
         }
     }
-
     // When we click the choice button, tell the story to choose that choice!
     void OnClickChoiceButton(Choice choice)
     {
@@ -122,34 +120,49 @@ public class InkManager : MonoBehaviour
 
         RefreshView();
     }
-
     // Creates a textbox showing the the line of text
-    void CreateContentView(string text)
+     void CreateContentView(string text)
     {
         GameObject box = Instantiate(boxPrefab) as GameObject;
         //box = (GameObject)PrefabUtility.InstantiatePrefab(boxPrefab);
         box.transform.SetParent(canvas.transform, false);
-        TextMeshProUGUI storyText = Instantiate(textPrefab) as TextMeshProUGUI;
-        storyText.text = text;
+        
+       TextMeshProUGUI storyText = Instantiate(textPrefab) as TextMeshProUGUI;
+       storyText.text= "" ;
+        
+        StopAllCoroutines();
+        StartCoroutine(TypeSentence(storyText, text));
         storyText.transform.SetParent(box.transform, false);
         HorizontalLayoutGroup layoutGroup2 = box.GetComponent<HorizontalLayoutGroup>();
         layoutGroup2.childForceExpandHeight = false;
+    }
+    IEnumerator TypeSentence(TextMeshProUGUI storyText, string sentence)
+    { 
+        storyText.text="";
+        foreach (char letter in sentence.ToCharArray())
+        {
+
+            storyText.text += letter;
+          print(storyText.text);
+            yield return new WaitForSeconds(0.03f);
+        }
+       
     }
 
     // Creates a button showing the choice text
     Button CreateChoiceView(string text)
     {
-            // Creates the button from a prefab
-            Button choice = Instantiate(buttonPrefab) as Button;
-            choice.transform.SetParent(canvas.transform, false);
+        // Creates the button from a prefab
+        Button choice = Instantiate(buttonPrefab) as Button;
+        choice.transform.SetParent(canvas.transform, false);
 
-            // Gets the text from the button prefab
-            Text choiceText = choice.GetComponentInChildren<Text>();
-            choiceText.text = text;
+        // Gets the text from the button prefab
+        Text choiceText = choice.GetComponentInChildren<Text>();
+        choiceText.text = text;
 
-            // Make the button expand to fit the text
-            HorizontalLayoutGroup layoutGroup = choice.GetComponent<HorizontalLayoutGroup>();
-            layoutGroup.childForceExpandHeight = false;
+        // Make the button expand to fit the text
+        HorizontalLayoutGroup layoutGroup = choice.GetComponent<HorizontalLayoutGroup>();
+        layoutGroup.childForceExpandHeight = false;
         return choice;
     }
 
@@ -160,10 +173,10 @@ public class InkManager : MonoBehaviour
         int childCount = canvas.transform.childCount;
         for (int i = childCount - 1; i >= 0; --i)
         {
-           
-                GameObject.Destroy(canvas.transform.GetChild(i).gameObject);
-            }
+
+            GameObject.Destroy(canvas.transform.GetChild(i).gameObject);
         }
-    
+    }
+ 
 }
 

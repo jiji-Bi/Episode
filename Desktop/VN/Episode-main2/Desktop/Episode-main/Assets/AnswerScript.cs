@@ -12,7 +12,7 @@ public class AnswerScript : MonoBehaviour
 
     private void Start()
     {
-        //*startColor = GetComponent<Image>().color;
+        startColor = GetComponent<Image>().color;
     }
 
 

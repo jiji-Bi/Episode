@@ -20,20 +20,8 @@ public class CharacterManager : MonoBehaviour
     {
         if (characters.Length - 1 < index || index < 0) return;
         GameObject Spawnedcharacter = Instantiate(characters[index]);
-        Spawnedcharacter.transform.position = actorPositions[positionIndex].position;
-        switch(positionIndex)
-        {
-            case 0:
-                Spawnedcharacter.GetComponent<Animator>().SetTrigger("Entertoleft");
-                break;
-
-            case 1:
-                Spawnedcharacter.GetComponent<Animator>().SetTrigger("EnterInflate");
-                break;
-            case 2:
-                Spawnedcharacter.GetComponent<Animator>().SetTrigger("EnterToRight");
-                break;
-        }
+       //Spawnedcharacter.transform.position = actorPositions[positionIndex].position;
+        Spawnedcharacter.transform.position = Spawnedcharacter.transform.position;
         Spawnedcharacters.Add(Spawnedcharacter);
     }
     public void ClearActors()

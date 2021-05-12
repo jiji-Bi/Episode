@@ -250,3 +250,4 @@ C:\Users\Asus\Desktop\VN\Episode-main2\Desktop\Episode-main\obj\Debug\InkEditor.
 C:\Users\Asus\Desktop\VN\Episode-main2\Desktop\Episode-main\obj\Debug\InkEditor.csproj.CopyComplete
 C:\Users\Asus\Desktop\VN\Episode-main2\Desktop\Episode-main\obj\Debug\InkEditor.dll
 C:\Users\Asus\Desktop\VN\Episode-main2\Desktop\Episode-main\obj\Debug\InkEditor.pdb
+C:\Users\Asus\Desktop\VN\Episode-main2\Desktop\Episode-main\Temp\bin\Debug\clipper_library.dll
